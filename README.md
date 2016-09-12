@@ -1,4 +1,4 @@
-# tugas1_4bit_ledCounter
+// tugas1_4bit_ledCounter
 int Reset = 7;
 
 void setup()  
@@ -20,12 +20,12 @@ void setup()
    int a=i%2;      // calculate LSB   
    int b=i/2 %2;     
    int c=i/4 %2;        
-   int d=i/8 %2;  //claculate MSB
-   digitalWrite(5,d);   //write MSB
-   digitalWrite(4,c);   
-   digitalWrite(3,b);    
-   digitalWrite(2,a);  // write LSB  
-   delay(1000);     // wait for a second 
+   int d=i/8 %2;  //hitung MSB
+   digitalWrite(5,a);   //write MSB
+   digitalWrite(4,b);   
+   digitalWrite(3,c);    
+   digitalWrite(2,d);  // write LSB  
+   delay(1000);     // wait for d second 
 
    digitalWrite(Reset, LOW);
   }  
